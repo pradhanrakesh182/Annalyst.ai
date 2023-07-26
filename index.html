@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scraped Amazon Products</title>
+</head>
+<body>
+    <h1>Amazon Products</h1>
+    <ul>
+        {% for product in products %}
+        <li>
+            <strong>{{ product.title }}</strong>
+            <span>{{ product.price }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
